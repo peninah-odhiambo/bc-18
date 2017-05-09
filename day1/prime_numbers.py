@@ -12,10 +12,14 @@ def prime (x):
     return True
     
   elif type(x) == float:
-    return False
+    return "Sorry, Prime numbers are whole"
+
+  elif x == None:
+    return "Please make an entry"
     
   elif x % 2 == 0 or x % sqrt (x) == 0:
     return False
   
   else:
     return True
+
