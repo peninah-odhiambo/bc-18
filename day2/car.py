@@ -42,6 +42,7 @@ class Car (object):
   def drive(self, moving_speed):
     if moving_speed == 3:
       self.speed = 1000
+      
     elif moving_speed == 7:
       self.speed = 77
 
