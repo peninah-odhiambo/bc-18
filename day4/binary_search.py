@@ -7,15 +7,18 @@ class BinarySearch(list):
 
     def search(self,item):
         answer = {}
-        count = 1
+        count = 0
         answer ['count'] = 0
         first = 0       
         last = self.length - 1
         found = False
 
-        while first <= last:
+        while first < last:
             mid = (first + last) // 2
             mid_val = mid
+
+         
+            answer['count'] += 1
 
             if mid_val == item:
                 answer['index'] = mid
@@ -29,7 +32,7 @@ class BinarySearch(list):
                     last = mid - 1
                 found = False
         
-        answer['count'] += 1
+        
 
         if found is False:
             answer['index'] = -1
@@ -38,7 +41,7 @@ class BinarySearch(list):
 
 bin = BinarySearch(40,2)
 
-print (bin.search(39))
+print (bin.search(33))
 
 
        
